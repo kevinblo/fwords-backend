@@ -1,0 +1,102 @@
+[
+  {
+    "model": "languages.language",
+    "pk": 1,
+    "fields": {
+      "code": "en",
+      "name_english": "English",
+      "name_native": "English",
+      "enabled": true
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 2,
+    "fields": {
+      "code": "ru",
+      "name_english": "Russian",
+      "name_native": "Русский",
+      "enabled": true
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 3,
+    "fields": {
+      "code": "es",
+      "name_english": "Spanish",
+      "name_native": "Español",
+      "enabled": true
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 4,
+    "fields": {
+      "code": "fr",
+      "name_english": "French",
+      "name_native": "Français",
+      "enabled": false
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 5,
+    "fields": {
+      "code": "de",
+      "name_english": "German",
+      "name_native": "Deutsch",
+      "enabled": false
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 6,
+    "fields": {
+      "code": "it",
+      "name_english": "Italian",
+      "name_native": "Italiano",
+      "enabled": false
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 7,
+    "fields": {
+      "code": "pt",
+      "name_english": "Portuguese",
+      "name_native": "Português",
+      "enabled": false
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 8,
+    "fields": {
+      "code": "zh",
+      "name_english": "Chinese",
+      "name_native": "中文",
+      "enabled": false
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 9,
+    "fields": {
+      "code": "ja",
+      "name_english": "Japanese",
+      "name_native": "日本語",
+      "enabled": false
+    }
+  },
+  {
+    "model": "languages.language",
+    "pk": 10,
+    "fields": {
+      "code": "ko",
+      "name_english": "Korean",
+      "name_native": "한국어",
+      "enabled": false
+    }
+  }
+]

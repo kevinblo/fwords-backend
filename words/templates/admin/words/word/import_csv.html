@@ -1,0 +1,43 @@
+﻿{% extends "admin/base_site.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="module aligned">
+        <h2>Импорт слов из CSV файла</h2>
+
+        <div class="form-row">
+            <div class="help">
+                <p><strong>Формат CSV файла:</strong></p>
+                <p>source_language_code,target_language_code,word,translation,transcription,audio_url,part_of_speech,level</p>
+                <p><strong>Пример:</strong> en,ru,abandon,оставить,/əˈbæn.dən/,abandon__us_2.mp3,verb,b2</p>
+            </div>
+        </div>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <fieldset class="module aligned">
+                <div class="form-row">
+                    {{ form.csv_file.label_tag }}
+                    {{ form.csv_file }}
+                    {% if form.csv_file.help_text %}
+                        <div class="help">{{ form.csv_file.help_text }}</div>
+                    {% endif %}
+                    {% if form.csv_file.errors %}
+                        <ul class="errorlist">
+                            {% for error in form.csv_file.errors %}
+                                <li>{{ error }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </fieldset>
+
+            <div class="submit-row">
+                <input type="submit" value="Импортировать" class="default" />
+                <a href="../" class="button cancel-link">Отмена</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}
